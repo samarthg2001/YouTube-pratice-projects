@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #212121;
+        align-content: center;
+        color: aliceblue;
+
+    }
+    #wrapper{
+       
+        width: 50%; /* Set to your preferred width */
+    margin: 0 auto; /* Auto margins for horizontal centering */
+    /* Additional styles */
+    }
+    .parent>.childe{
+        
+        background-color: gray;
+        align-items: center;
+        align-content: center;
+    }
+    .container.#btn{
+        background-color: black;
+        color: aliceblue;
+    }
+</style>
+<body>
+        <div id="wrapper">
+            <h1>Number guessing game</h1>
+            <p> Try and guess a randossm number between 1 and 100</p>
+            <p>you have 10 attempts to guess the right number</p><br>
+
+            <form>
+                <label for="guessField" id="guess">Guess a number</label><br>
+                <input type="text" class="guessField" id="guessField"><br>
+                <input type="submit" id="sunbt " value="submitguess">            </form>
+        
+        <div id="resultparas">
+            <p>previous guesses :<span class="guesses"></span></p>
+            <p>guesses remaining : <span class="lastResult" >10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+        </div>
+        <script>
+            const input=parseInt(document.querySelector('#guessField').value);
+            //to genarate random number
+             const randomNumber=parseInt((Math.random()*10+1));
+            const guesses=document.querySelector('.guesses') 
+            const submit=document.querySelector('#sunbt')
+            const lastResult=document.querySelector('.lastResult') 
+            const lowOrHi=document.querySelector('.lowOrHi') 
+            const startOver=document.querySelector('.resultparas') 
+            const p=document.createElement('p')
+
+            let preGuess=[]
+            let numGuess=1
+            let playGame=true// it alove to play the game
+            function validateGuess(gues){
+                // if given write numbre or not
+                // like nan,above number ,belowe 0 negative 
+
+
+
+            }
+            
+            function checkguess(){
+
+            }
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
