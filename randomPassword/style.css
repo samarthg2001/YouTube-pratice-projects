@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    
+}
+#userinput{
+    width: 20%;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+#p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+button{
+    background-color: hsl(0, 59%, 41%);
+    margin-top: 15px;
+    color: aliceblue;
+    cursor: pointer
+    ;
+}
+button:hover{
+    background-color: hsl(0, 59%, 31%);
+}
+button:active{
+    background-color:  hsl(151, 49%, 31%);
+};
+#r{
+    font-size: 10em;
+    font-weight: bold;
+}
+#container{
+    text-align: center;
+    font-size: 1em;
+}
