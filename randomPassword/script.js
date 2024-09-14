@@ -64,3 +64,16 @@ let includeUppercase=false
     result.textContent=` the password is ${password}`
 
 }
+
+
+
+hello();
+Bye(hello);
+
+function hello(){
+    console.log(`hello`);
+}
+function Bye(callback){
+    console.log(`Bye`);
+    callback();
+}
