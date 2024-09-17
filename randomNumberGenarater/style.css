@@ -1,0 +1,19 @@
+
+#label{
+    display: block;
+    text-align: center;
+    font-size: 5em;
+
+}
+
+#btnContainer{
+ text-align: center;   
+}
+#btn{
+    text-align: center;
+    font-size: 2em;
+    color:rgb(0, 0, 0);
+    background-color: rgb(251, 0, 255);
+    cursor: pointer;
+
+}
