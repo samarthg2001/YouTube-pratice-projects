@@ -1,0 +1,23 @@
+body{
+    background-image: url(/digitalClock/shiva.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+#digital-clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+}
+#clock{
+    display: flex;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(200, 135, 37);
+    backdrop-filter: blur(5px);
+  
+
+}
