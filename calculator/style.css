@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(189, 195, 201);
+    color: red;
+    text-align: center;
+}
+
+form{
+background-color: azure;
+height: 50vh;
+}
+input{
+    height: 5vh;
+    border-color: black;
+}
+button{
+    
+    
+    height: 5vh;
+    background-color: orange;
+    color: aliceblue;
+    border-radius: 50%;
+}
