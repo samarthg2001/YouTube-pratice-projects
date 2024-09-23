@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(139, 145, 150);
+    align-items: center;
+}
+h1{
+    color: white;
+    font-size: 2em;
+    font-weight: bold ;
+    text-align: center;
+}
+#p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#pokemonName{
+    width: 30vh;
+    height: 4vh;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5%;
+}
+#pokomonimage{
+    height: 60vh;
+    width: 60vh;
+}
+
+#btn{
+    width: 15vh;
+    height: 7vh;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 20%;
+}
+#btn:hover{
+    cursor: pointer;
+    background-color: rgb(182, 34, 34);
+}
+#conatianer{
+    border-radius: 5%;
+    text-align: center;
+    height:  80vh;
+    width: 500px;
+    background-color: rgb(170, 181, 181);
+
+}
