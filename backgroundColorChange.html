@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        align-content: cente;
+
+    }
+    #orange{
+        background-color: rgb(255, 4, 0);
+        padding : 10px 30px;
+        margin: 10px;
+        border-radius : 8px;
+        color: #126351;
+        text-decoration: none;
+        border: 2px solid #212121;
+        
+}
+#yellow{
+        background-color: rgb(211, 248, 0);
+        padding : 10px 30px;
+        margin: 10px;
+        border-radius : 8px;
+        color: #126351;
+        text-decoration: none;
+        border: 2px solid #212121;
+        
+}
+#grey{
+        background-color: grey;
+        padding : 10px 30px;
+        margin: 10px;
+        border-radius : 8px;
+        color: #126351;
+        text-decoration: none;
+        border: 2px solid #212121;
+        
+}
+#white{
+        background-color:white;
+        padding : 10px 30px;
+        margin: 10px;
+        border-radius : 8px;
+        color: #126351;
+        text-decoration: none;
+        border: 2px solid #212121;
+        
+}
+#white{
+        background-color:white;
+        padding : 10px 30px;
+        margin: 10px;
+        border-radius : 8px;
+        color: #126351;
+        text-decoration: none;
+        border: 2px solid #212121;
+        
+}
+#purple{
+        background-color:purple;
+        padding : 10px 30px;
+        margin: 10px;
+        border-radius : 8px;
+        color: #126351;
+        text-decoration: none;
+        border: 2px solid #212121;
+        
+}
+#Pink{
+        background-color:Pink;
+        padding : 10px 30px;
+        margin: 10px;
+        border-radius : 8px;
+        color: #126351;
+        text-decoration: none;
+        border: 2px solid #212121;
+        
+}
+#lightblue{
+        background-color:lightblue;
+        padding : 10px 30px;
+        margin: 10px;
+        border-radius : 8px;
+        color: #126351;
+        text-decoration: none;
+        border: 2px solid #212121;
+        
+}
+#gold{
+        background-color:gold;
+        padding : 10px 30px;
+        margin: 10px;
+        border-radius : 8px;
+        color: #126351;
+        text-decoration: none;
+        border: 2px solid #212121;
+        
+}
+</style>
+<body style="background-color: #126351;">
+    <h1 style="text-align: center;"> color scheme switcher</h1>
+    <span class="button" id="orange"></span>
+    <span class="button" id="yellow"></span>
+    <span class="button" id="grey"></span>
+    <span class="button" id="white"></span><br><br><br>
+    <span class="button" id="purple"></span>
+    <span class="button" id="Pink"></span>
+    <span class="button" id="lightblue"></span>
+    <span class="button" id="gold"></span>
+    <p >Try clicking on one of the color above <br> 
+        to chang the background color</p>
+
+</body>
+<script>
+ const buttons=   document.querySelectorAll('.button')
+ //  console.log(button);
+ const body=document.querySelector('body')
+
+
+ buttons.forEach(function(btn){
+    console.log(btn);
+    // to change background on click event called background change function
+    btn.addEventListener('click',changeBackground)
+ })
+   //  params is event ka object 
+   // function to change background
+ function changeBackground (e){
+        console.log(e);
+        console.log(e.target);
+        if(e.target.id==='orange'){
+            // document must be write 
+           document.body.style.backgroundColor=e.target.id;
+        }
+        
+        if(e.target.id==='grey'){
+            document.body.style.backgroundColor=e.target.id;
+        }
+
+        
+        if(e.target.id==='white'){
+            document.body.style.backgroundColor=e.target.id;
+        }
+
+        
+        if(e.target.id==='yellow'){
+            document.body.style.backgroundColor=e.target.id;
+        }
+        
+        if(e.target.id==='Pink'){
+            // document must be write 
+           document.body.style.backgroundColor=e.target.id;
+        }
+        
+        if(e.target.id==='lightblue'){
+            document.body.style.backgroundColor=e.target.id;
+        }
+
+        
+        if(e.target.id==='purple'){
+            document.body.style.backgroundColor=e.target.id;
+        }
+
+        
+        if(e.target.id==='gold'){
+            document.body.style.backgroundColor=e.target.id;
+        }
+        
+
+    
+    }
+
+</script>
+</html>

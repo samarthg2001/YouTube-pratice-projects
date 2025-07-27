@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+        color: darkred;
+        font-size: large;
+        text-align: center;
+    }
+    .container{
+        align-content: center;
+        width: 50%; /* Set to your preferred width */
+    margin: 0 auto; /* Auto margins for horizontal centering */
+    /* Additional styles */
+    }
+    #Weight-giude{
+      width: 50%; /* Or any width you prefer */
+    margin-left: auto;
+    margin-right: auto;
+    /* Additional styles for your div */
+    }
+</style>
+<body>
+    <div class="container">
+<h1>BMI calculator</h1>
+<form >
+    <p><label>Height in CM <input type="text"  id="Height"></label></p>
+    <p><label>Weight in kg <input type="text" id="Weight" > </label></p>
+    
+    <button class="cal" style="color: darkred;"> Calculate</button></div>
+    <div id="result"></div>
+    <div id ="Weight-giude">
+    <h3> BMI Weight Guide </h3>
+    <p> Under Weight = Less than 18.6</p>
+    <p> Normal Range = 18.6 and 24.9</p>
+    <p> Over Weight = Greater than 24.9</p>
+    <div id="Range"></div>
+    <div id="age"></div>
+</div>
+</form>
+<script>
+ const form =document.querySelector('form')
+    form.addEventListener('submit',function (e){
+        e.preventDefault();
+        // .value will get only the values
+        // pareInt is a method to convert value into interger form
+        const Height=parseInt(document.querySelector('#Height').value);
+        const Weight=parseInt(document.querySelector('#Weight').value);
+        const result=document.querySelector('#result');
+        const Range=document.querySelector('#Range')
+        const age=document.querySelector('#age')
+        let BMI=0;
+        if(Height=='' && Weight==''){
+            result.innerHTML=`please insert the values`;
+        }
+        else if(Height===''|| Height<0||isNaN(Height)){
+            result.innerHTML=`please insert valid Height ${Height}`;
+        }
+        else if(Weight===''|| Weight<0||isNaN(Weight)){
+            // to insert value in html page  id/class/tag .innerHTMl
+            result.innerHTML=`please insert valid Weight ${Weight}`;
+        }
+        else{
+            // tofixed value will be give integer only 2 values
+             BMI=parseInt(Weight/((Height*Height)/10000)).toFixed(2)
+            result.innerHTML=`<span>${BMI}</span>`
+        }
+        if(BMI<18.6){
+            Range.innerHTML=`${BMI} is on under weight range`
+        }
+        else if(BMI >=18.6 && BMI <=24.9){
+            Range.innerHTML=`${BMI} is on noraml weight range`
+        }
+        else{
+            Range.innerHTML=`${BMI} is on over weight range`
+        }
+    
+    }
+)
+    
+</script>
+</body>
+</html>
